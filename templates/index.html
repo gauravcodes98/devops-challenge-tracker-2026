@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Challenge Tracker 2026</title>
+</head>
+<body>
+
+    <h1>🚀 DevOps Challenge Tracker 2026</h1>
+
+    <h2>Welcome Gaurav</h2>
+
+    <p>Learning DevOps Step by Step</p>
+
+    <h3>Progress</h3>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Topic</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
